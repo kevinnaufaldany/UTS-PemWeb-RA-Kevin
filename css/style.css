@@ -1,0 +1,865 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+   --main-color : #f5f3c6;
+   --main-color-1: #F2EE9D;
+   --main-color-2: #7A9D54;
+   --main-color-3: #557A46;
+   --main-color-4: #8C3333;
+   --main-color-cream: #fffaeb;
+   --black: #000000;
+   --white: #ffffff;
+}
+
+body{
+   background-color: var(--white);
+   font-family: 'Kanit', sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+.sidebar{
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 220px;
+   background-color: var(--main-color-3);
+   z-index: 1000;
+   transition: 0.5s;
+}
+
+.sidebar h1{
+   text-align: left;
+   padding: 10px 30px;
+   margin: 0;
+   font-size: 2rem;
+}
+
+.sidebar a{
+   display: block;
+   color: var(--main-color-1);
+   padding: 10px 20px;
+   text-decoration: none;
+   transition: 0.5s;
+}
+
+.sidebar .ul-a:hover{
+   background-color: var(--main-color-2);
+   border-radius: 15px;
+}
+
+.sidebar ul{
+   list-style: none;
+   padding: 0 30px;
+   margin: 0;
+}
+
+/* index // home */
+
+.header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 20px 30px 240px;
+   z-index: 1000;
+   margin: 0;
+   background-color: var(--main-color-cream);
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header h1{
+   font-size: 2rem;
+   color: var(--main-color-4);
+   /* margin: 0; */
+}
+
+.header img{
+   display: flex;
+   float: right;
+   text-align: right;
+   /* margin-top: -150px;  */
+   width: auto;
+   height: 190px;
+   border-radius: 10px;
+}
+
+.header p{
+   padding-right: 165px;
+   font-size: 1.1rem;
+   text-align: justify;
+}
+
+.header .social{
+   display: flex;
+   align-items: center;
+}
+
+.header a{
+   color: var(--main-color-4);
+   text-decoration: none;
+   padding: 10px 20px 10px 0;
+   transition: 0.5s;
+   font-size: 20px;
+}
+
+.header .social-icon-yt{
+   font-size: 24px;
+}
+
+
+.ri-facebook-fill:hover{
+   color: #3b5998;
+}
+
+.ri-instagram-fill:hover{
+   color: #C13584;
+}
+
+.ri-twitter-x-fill:hover{
+   color: black;
+}
+
+.ri-youtube-fill:hover{
+   color: #FF0000;
+}
+
+.container{
+   padding: 0 20px;
+}
+
+.who-cr7{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 20px 30px 240px;
+   z-index: 1000;
+   margin: 0;
+   background-color: var(--white);
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.who-cr7 p{
+   padding-left: 160px;
+   font-size: 1.1rem;
+   text-align: justify;
+}
+
+.who-cr7 h2{
+   font-size: 2rem;
+   color: var(--main-color-4);
+   /* margin: 0; */
+}
+
+.who-cr7 video{
+   display: flex;
+   float: left;
+   text-align: left;
+   margin-top: 12px; 
+   width: auto;
+   height: 230px;
+   border-radius: 10px;
+}
+
+.club{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 20px 30px 240px;
+   z-index: 1000;
+   margin: 0;
+   background-color: var(--main-color-cream);
+   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.club-list{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 40px;
+   margin-top: 20px; 
+   margin-bottom: 40px; 
+}
+
+.club h2{
+   font-size: 2rem;
+   color: var(--main-color-4);
+   /* margin: 0; */
+}
+
+.club-item{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 0 20px 15px 20px;
+   background-color: var(--white);
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+}
+
+.club-item h3{
+   font-size: 1.5rem;
+   color: var(--main-color-3);
+   background-color: var(--white);
+   border-radius: 20px;
+   padding: 0 10px;
+}
+.club-item span{
+   font-size: 1rem;
+   color: var(--main-color-3);
+   background-color: var(--white);
+   border-radius: 20px;
+   padding: 0 10px;
+}
+
+.club-item p{
+   font-size: 1rem;
+   text-align: justify;
+   color: var(--white);
+   background-color: var(--main-color-3);
+   border-radius: 20px;
+   padding: 10px 10px;
+}
+
+.sporting{
+   background-image: url(/assets/pic/sporting.jpeg);
+   background-size: cover;
+   background-position: center;
+}
+
+.mu{
+   background-image: url(/assets/pic/mu.jpeg);
+   background-size: cover;
+   background-position: center;
+}
+
+.real-madrid{
+   background-image: url(/assets/pic/realmadrid.jpeg);
+   background-size: cover;
+   background-position: center;
+}
+
+.juventus{
+   background-image: url(/assets/pic/juventus.jpeg);
+   background-size: cover;
+   background-position: center;
+}
+
+.mu2{
+   background-image: url(/assets/pic/mu2.jpeg);
+   background-size: cover;
+   background-position: center;
+}
+
+.al-nassr{
+   background-image: url(/assets/pic/al-nassr.jpeg);
+   background-size: cover;
+   background-position: center;
+}
+
+.awards{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 20px 30px 240px;
+   z-index: 1000;
+   margin: 0;
+   background-color: var(--white);
+   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.award-list{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 40px;
+   margin-top: 20px; 
+   margin-bottom: 40px; 
+}
+
+.award-item{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 0 20px 15px 20px;
+   background-color: var(--main-color-cream);
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+}
+
+.awards h2{
+   font-size: 2rem;
+   color: var(--main-color-4);
+   /* margin: 0; */
+}
+
+.award-item h3{
+   font-size: 1.1rem;
+   color: var(--main-color-3);
+   background-color: var(--main-color-cream);
+   border-radius: 20px;
+   padding: 0 10px;
+}
+
+.award-item span{
+   font-size: 1rem;
+   color: var(--main-color-3);
+   background-color: var(--main-color-cream);
+   border-radius: 20px;
+   padding: 10px;
+}
+
+.award-item p{
+   font-size: 0.9rem;
+   text-align: justify;
+   color: var(--black);
+}
+
+.award-item img{
+   width: 100%;
+   height: auto;
+}
+
+.ballon-dor img{
+   width: 90%;
+   height: auto;
+}
+
+.footer{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /* margin: 0 20px 30px 240px; */
+   padding: 0 20px 30px 240px;
+   z-index: 1000;
+   margin: 0;
+   background-color: var(--main-color-cream);
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer h1 a{
+   font-size: 2rem;
+   color: var(--main-color-4);
+   text-decoration: none;
+}
+
+/* fan form */
+.form-fan{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 20px 30px 240px;
+   z-index: 1000;
+   margin: 0;
+   background-color: var(--white);
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-fan h1{
+   font-size: 2.5rem;
+   color: var(--main-color-4);
+   /* margin: 0; */
+}
+
+.form-fan form{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   /* align-items: center; */
+   padding: 15px 30px 15px 20px;
+   background-color: var(--main-color-cream);
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+}
+
+input[type="text"], input[type="date"], input[type="password"], input[type="submit"]{
+   width: 100%;
+   padding: 5px;
+   margin: 10px 0;
+   border: 1px solid var(--main-color-3);
+   border-radius: 5px;
+}
+
+textarea{
+   width: 100%;
+   padding: 5px;
+   margin: 10px 0;
+   border: 1px solid var(--main-color-3);
+   border-radius: 5px;
+   resize: none;
+   
+}
+
+textarea:focus, input[type="text"]:focus, input[type="date"]:focus, input[type="password"]:focus{
+   border: 1px solid var(--main-color-2);
+   
+}
+
+input[type="submit"]{
+   background-color: var(--main-color-3);
+   color: var(--main-color-cream);
+   font-size: 1rem;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+input[type="submit"]:hover{
+   background-color: var(--main-color-2);
+}
+
+.gender{
+   padding: 10px 20px 0px 0px;
+   
+}
+
+.club-form{
+   padding: 10px 20px 0px 0px;
+
+}
+.question{
+   padding: 10px 20px 0px 0px;
+
+}
+
+.verification{
+   padding: 0px 20px 0px 0px;
+   margin: 0;
+}
+
+.verification small{
+   padding: 0px;
+   font-size: 0.7rem;
+}
+
+input[type="radio"]:checked {
+   accent-color: var(--main-color-3);
+}
+input[type="checkbox"]:checked {
+   accent-color: var(--main-color-3);
+}
+
+/* feedback */
+.appreciation{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 20px 30px 240px;
+   z-index: 1000;
+   margin: 0;
+   background-color: var(--white);
+   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.appreciation h1{
+   font-size: 2.5rem;
+   color: var(--main-color-4);
+   /* margin: 0; */
+}
+
+.appreciation p{
+   font-size: 1.1rem;
+   text-align: justify;
+}
+.appreciation a{
+   font-size: 1.1rem;
+   text-align: justify;
+   color: var(--main-color-4);
+}
+
+.signature{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 10px 20px 30px 20px;
+
+}
+
+.download-link{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0 0px 30px 0px;
+   font-size: 1.5rem;
+   color: var(--main-color-4);
+   /* text-decoration: none; */
+}
+
+/* table */
+
+.table-responsive {
+   margin-left: 220px;
+   padding: 20px;
+   overflow-x: auto; /* Responsif - Membuat tabel bisa di-scroll secara horizontal */
+}
+
+table {
+   width: 100%;
+   border-collapse: collapse;
+   background-color: var(--white);
+}
+
+th, td {
+   padding: 12px;
+   text-align: left;
+   border: 1px solid var(--main-color-2);
+}
+
+th {
+   background-color: var(--main-color-2);
+   color: var(--white);
+}
+
+tr:nth-child(even) {
+   background-color: var(--main-color);
+}
+
+tr:hover {
+   background-color: var(--main-color-1);
+}
+
+
+.label-h1 {
+   padding: 0 0px 0 240px;
+   color: var(--main-color-4);
+}
+
+
+/* Responsif */
+@media (max-width: 768px) {
+   .table-responsive {
+       margin-left: 0px;
+   }
+
+   .label-h1 {
+      padding: 70px 25px 0px 25px;
+   }
+
+   table {
+       font-size: 14px;
+   }
+}
+
+@media (max-width: 576px) {
+   .table-responsive {
+       margin-left: 0px;
+   }
+
+   .label-h1 {
+      font-size: 0.8rem;
+      padding: 70px 25px 0px 25px;
+   }
+
+   table {
+       font-size: 12px;
+   }
+}
+
+@media (max-width: 1150px) {
+   .club-list, .award-list {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+   .sidebar{
+      width: 210px;
+   }
+
+   .sidebar h1{
+      font-size: 1.9rem;
+      padding: 10px 25px;
+   }
+
+   .sidebar ul{
+      padding: 0 24px;
+      font-size: 0.95rem;
+   }
+   
+   .header {
+       flex-direction: column;
+       /* text-align: center; */
+       padding:  0 20px 20px 240px;
+   }
+
+   .header img {
+       margin-top: 5px;
+       height: 150px;
+   }
+
+   .header h1 {
+       font-size: 1.75rem;
+   }
+
+   .header p {
+       padding-right: 130px;
+       font-size: 1rem;
+   }
+
+   .header a{
+      font-size: 18px;
+      padding: 5px 15px 5px 0;
+   }
+
+   .social-icon-yt{
+      font-size: 20px;
+   }
+
+   .who-cr7 p {
+       padding-left: 130px;
+   }
+
+   .who-cr7 h2 {
+       font-size: 1.75rem;
+   }
+
+   .who-cr7 video {
+       margin-top: 5px;
+       height: 190px;
+   }
+
+   .club-list, .award-list {
+       grid-template-columns: repeat(2, 1fr);
+   }
+
+   .club, .awards {
+       flex-direction: column;
+       padding: 0 20px 30px 240px;
+   }
+
+   .club h2, .awards h2 {
+       font-size: 1.75rem;
+   }
+
+   .club-item p{
+      font-size: 0.95rem;
+   }
+
+   .award-item p{
+      font-size: 0.85rem;
+   }
+
+   .footer h1 a{
+      font-size: 1.75rem;
+   }
+   
+   .footer p{
+      font-size: 0.95rem;
+   }
+
+   .footer span{
+      font-size: 0.95rem;
+   }
+}
+
+@media (max-width: 768px) {
+   .sidebar {
+       width: 100%;
+       height: auto;
+       position: fixed;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+       padding: 10px 0px;
+   }
+
+   .sidebar h1 {
+       font-size: 1.5rem;
+       padding: 0 20px;
+   }
+
+   .sidebar ul {
+       display: flex;
+       flex-direction: row;
+       padding: 0 20px;
+   }
+
+   .sidebar ul li {
+       margin: 0 10px;
+   }
+
+   .sidebar a {
+       padding: 10px 15px;
+   }
+
+   .header {
+       padding: 80px 20px 30px 20px;
+   }
+
+   .header h1 {
+      font-size: 1.6rem;
+   }
+
+   .header p {
+      font-size: 0.9rem;
+   }
+
+   .header a{
+      font-size: 17px;
+   }
+
+   .social-icon-yt{
+      font-size: 17px;
+   }
+
+   .who-cr7 {
+       flex-direction: column;
+       padding: 0 20px 30px 20px;
+   }
+
+   .who-cr7 h2 {
+       font-size: 1.6rem;
+   }
+
+   .who-cr7 video {
+      width: auto !important;
+      height: 230px !important;
+      float: none;
+      margin: 0 auto;
+      
+   }
+
+   .who-cr7 p {
+       font-size: 0.95rem;
+       padding: 0;
+   }
+
+   .club, .awards {
+       padding: 0 20px 30px 20px;
+   }
+
+   .club-list, .award-list {
+       grid-template-columns: repeat(2, 1fr);
+   }
+
+   .club-item p {
+       font-size: 0.9rem;
+   }
+
+   .award-item {
+       padding: 10px;
+   }
+
+   .footer {
+       padding: 0 20px 30px 20px;
+   }
+
+   .form-fan{
+      padding: 70px 20px 30px 20px;
+   }
+
+   .appreciation{
+      padding: 70px 20px 30px 20px;
+   }
+}
+
+@media (max-width: 576px) {
+   .sidebar {
+       width: 100%;
+       height: auto;
+       position: fixed;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+       padding: 5px 0px;
+   }
+
+   .sidebar .ul-a:hover{
+      background-color: var(--main-color-2);
+      border-radius: 15px;
+   }
+
+   .sidebar h1 {
+       font-size: 1.4rem;
+       padding: 0 20px;
+   }
+
+   .sidebar a{
+      padding: 5px 10px;
+   }
+
+   .sidebar .ul-a:hover{
+      background-color: var(--main-color-2);
+      border-radius: 10px;
+   }
+
+   .sidebar ul li{
+      margin: 0 5px;
+      font-size: 0.8rem;
+   }
+
+   .header {
+      padding: 55px 15px 30px 15px;
+   }
+
+   .header h1 {
+       font-size: 1.5rem;
+   }
+
+   .header p {
+       font-size: 0.8rem;
+   }
+
+   .header a {
+       font-size: 15px;
+   }
+
+   .social-icon-yt {
+       font-size: 15px;
+   }
+
+   .who-cr7 {
+       padding: 0 15px 30px 15px;
+   }
+
+   .who-cr7 h2 {
+       font-size: 1.5rem;
+   }
+
+   .who-cr7 video {
+       width: auto !important;
+       height: 200px !important;
+       float: none;
+       margin: 0 auto;
+   }
+
+   .who-cr7 p {
+       font-size: 0.8rem;
+       padding: 0;
+   }
+
+   .club h2, .awards h2 {
+       font-size: 1.5rem;
+   }
+
+   .club, .awards {
+       padding: 0 15px 30px 15px;
+   }
+
+   .club-list, .award-list {
+       grid-template-columns: repeat(1, 1fr);
+   }
+
+   .club-item p {
+       font-size: 0.8rem;
+   }
+
+   .award-item {
+       padding: 10px;
+   }
+
+   .footer {
+       padding: 0 15px 30px 15px;
+   }
+   
+}
+
+
+
+
+
+
+
