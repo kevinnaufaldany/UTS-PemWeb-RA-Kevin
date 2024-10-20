@@ -222,37 +222,37 @@ body{
 }
 
 .sporting{
-   background-image: url(/assets/pic/sporting.jpeg);
+   background-image: url(sporting.jpeg);
    background-size: cover;
    background-position: center;
 }
 
 .mu{
-   background-image: url(/assets/pic/mu.jpeg);
+   background-image: url(mu.jpeg);
    background-size: cover;
    background-position: center;
 }
 
 .real-madrid{
-   background-image: url(/assets/pic/realmadrid.jpeg);
+   background-image: url(realmadrid.jpeg);
    background-size: cover;
    background-position: center;
 }
 
 .juventus{
-   background-image: url(/assets/pic/juventus.jpeg);
+   background-image: url(juventus.jpeg);
    background-size: cover;
    background-position: center;
 }
 
 .mu2{
-   background-image: url(/assets/pic/mu2.jpeg);
+   background-image: url(mu2.jpeg);
    background-size: cover;
    background-position: center;
 }
 
 .al-nassr{
-   background-image: url(/assets/pic/al-nassr.jpeg);
+   background-image: url(al-nassr.jpeg);
    background-size: cover;
    background-position: center;
 }
